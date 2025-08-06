@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HeyHubs - Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #000;
+      line-height: 1.6;
+      padding: 1rem;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    nav {
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      background: #f2654a;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    section {
+      margin-top: 3rem;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .benefits {
+      text-align: center;
+    }
+
+    .benefit {
+      margin: 2rem 0;
+    }
+
+    .benefit img {
+      height: 32px;
+      margin-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .cards {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .card {
+        width: 48%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="HeyHubs logo">
+    <nav>☰</nav>
+  </header>
+
+  <section class="hero">
+    <img src="hero-illustration.png" alt="Hero illustration">
+    <h1><span style="color: #f2654a">Odnajdź swoją przestrzeń</span> – z ekipą, która ma takie samo flow jak Ty.</h1>
+    <p>Bo rozwój to nie tylko wiedza, to też relacje. Znajdź ludzi, z którymi poczujesz się pewniej – w pracy i w życiu.</p>
+    <button class="btn">Dołącz do HeyHubs</button>
+  </section>
+
+  <section>
+    <h2 style="text-align: center;">Kogo możesz spotkać w HeyHubs?</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="professional-icon.png" alt="Profesjonaliści">
+        <h3>Profesjonaliści i liderzy zespołów</h3>
+        <p>Dzielisz się swoim doświadczeniem, rozwijasz innych i pomagasz im świadomie budować karierę.</p>
+      </div>
+      <div class="card">
+        <img src="educator-icon.png" alt="Edukatorzy">
+        <h3>Edukatorzy, trenerzy, coachowie</h3>
+        <p>Tworzysz przestrzenie rozwoju, w których wiedza przekłada się na realną zmianę.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <h2>Jakie korzyści czekają na Ciebie?</h2>
+
+    <div class="benefit">
+      <img src="check.png" alt="Check">
+      <h3>Dostęp do inspirujących mentorów.</h3>
+      <p>Ucz się od praktyków, którzy dzielą się doświadczeniem, wiedzą i realnymi wskazówkami — bez nadęcia, za to z wartością.</p>
+    </div>
+
+    <div class="benefit">
+      <img src="check.png" alt="Check">
+      <h3>Udział w wydarzeniach, które rozwijają</h3>
+      <p>Warsztaty, webinary, spotkania — online i offline. To nie tylko teoria, ale realna wymiana wiedzy i energii.</p>
+    </div>
+
+    <div class="benefit">
+      <img src="check.png" alt="Check">
+      <h3>Społeczność ludzi, którzy chcą więcej</h3>
+      <p>Poznasz osoby z podobnymi celami i pasją do rozwoju. Tu networking dzieje się naturalnie, nie sztucznie.</p>
+    </div>
+
+    <div class="benefit">
+      <img src="check.png" alt="Check">
+      <h3>Tematy, które naprawdę Cię interesują</h3>
+      <p>Od kariery i biznesu po modę, design czy wellbeing. Ty wybierasz, czego chcesz się uczyć i z kim.</p>
+    </div>
+
+    <div class="benefit">
+      <img src="check.png" alt="Check">
+      <h3>Przestrzeń dla Ciebie</h3>
+      <p>Twórz własne ścieżki rozwoju, dołączaj do grup tematycznych lub po prostu bądź — w swoim tempie, na swoich zasadach.</p>
+    </div>
+  </section>
+</body>
+</html>
